@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css')?>" />
-    <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap-responsive.min.css')?>" />
+    <link rel="stylesheet" href="<?= base_url('assets/css/bootstrap.min.css')?>" />
+    <link rel="stylesheet" href="<?= base_url('assets/css/bootstrap-responsive.min.css')?>" />
 </head>
 <body>

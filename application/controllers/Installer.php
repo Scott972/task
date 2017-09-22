@@ -23,10 +23,10 @@ class Installer extends CI_Controller{
      */
     public function install()
     {
-//        if(! $this->input->is_ajax_request()){//we dont want this to be runnable via the url
-//            die('please run this from the login page');
-//        }
-//         
+        if(! $this->input->is_ajax_request()){//we dont want this to be runnable via the url
+            die('please run this from the login page');
+        }
+         
         if($this->migration->version(1)){
             
             $this->create_users();

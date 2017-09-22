@@ -10,7 +10,6 @@
 					); ?>
 					<? $this->table->set_heading('ID','Username','First Name', 'Last Name', 'Email'); ?>
 					<?= $this->table->generate(); ?>
-					<?//= $this->table->clear(); ?>
 				</div>
 			</div>
 	</div>
