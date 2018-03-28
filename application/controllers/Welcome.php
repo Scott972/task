@@ -12,14 +12,21 @@ class Welcome extends Assessment {
 
 	}
 
+	/**
+	 * Default method routed to if no other url params exist
+	 */
 	public function index()
 	{
 		$this->load->view('includes/header');
 		$this->load->view('welcome_message');
 		$this->load->view('includes/footer');
-
 	}
 
+	/**
+	 * @return JSON OBJECT
+	 * 
+	 * Returns a json encoded string of all users
+	 */
 	public function ajax_get_all_users()
 	{
 		if ( ! $this->input->is_ajax_request()) {

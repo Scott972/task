@@ -19,7 +19,7 @@ class Installer extends CI_Controller{
     }
 
     /**
-     * Creates inital tables needed to authenticate
+     * Creates initial tables needed to authenticate
      */
     public function install()
     {
@@ -27,7 +27,7 @@ class Installer extends CI_Controller{
             die('please run this from the login page');
         }
          
-        if($this->migration->version(1)){
+        if($this->migration->version(1)){//running first migration to install needed users table
             
             $this->create_users();
             
@@ -112,12 +112,5 @@ class Installer extends CI_Controller{
     }
 
 
-    function goofed($data)
-    {
-        echo "<pre>";
-        var_dump($data);
-        echo"</pre>";
-
-        die();
-    }
+ 
 }
